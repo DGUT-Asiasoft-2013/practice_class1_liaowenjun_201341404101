@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+          android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+         >
+       <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textSize="28sp"
+        android:text="我的评论" />
+        
+            
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+             />
+    </FrameLayout>
+
+    
+    <ListView 
+         android:id="@+id/myComm_list"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:layout_marginTop="44dp"
+        ></ListView>
+
+</FrameLayout>

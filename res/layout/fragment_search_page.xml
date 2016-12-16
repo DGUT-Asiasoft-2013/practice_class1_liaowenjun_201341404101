@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="search page" 
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:textSize="25sp"/>
+    
+    <View  android:layout_width="match_parent"
+        android:layout_height="1dp"
+        />
+    </FrameLayout>
+
+    <LinearLayout
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:orientation="horizontal"
+        android:layout_weight="4"  >
+
+    <EditText
+        android:id="@+id/searchText"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.22"
+        android:ems="2"
+        android:hint="查找评论" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查找" 
+        android:layout_weight="2" />
+</LinearLayout>
+
+    <ListView 
+        android:id="@+id/list"
+          android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="82dp"
+        tools:listitem="@layout/widget_comment_item" >
+        
+    </ListView>
+</FrameLayout>
